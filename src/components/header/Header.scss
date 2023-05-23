@@ -1,0 +1,14 @@
+@use '../../sass/varibales' as *;
+
+.header{
+  background-color: $border-input-color;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.header img{
+  width: 150px;
+  margin-left: 56px;
+  margin-top: 27px;
+  margin-bottom: 48px;
+}

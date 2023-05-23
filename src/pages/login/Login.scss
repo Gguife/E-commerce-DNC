@@ -1,0 +1,97 @@
+@use '../../sass/varibales' as * ;
+
+.login-container{
+  height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-container h1{
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.login-container p{
+  margin-bottom: 84px;
+  font-size: 22px;
+}
+.login-form form{
+  display: flex;
+  flex-direction: column;
+}
+.login-form input{
+  width: 524px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 11px 13px;
+  margin-bottom: 31px;
+  border: 1px solid $border-input-color;
+}
+.login-form label {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+.login-form button{
+  height: 48px;
+  margin-top: 31px;
+  cursor: pointer;
+  background-color: $contrast-color;
+  border-radius: 6px;
+  border: none;
+  color: $white;
+  transition: .4s;
+}
+
+.login-form button:hover{
+  opacity: .6;
+}
+
+
+@media (max-width: 580px){
+  .login-container{
+    padding: 0px 10px;
+  }
+  .login-container h1{
+    font-size: 25px;
+  }
+  .login-container p{
+    font-size: 18px;
+  }
+  .login-form, .login-form input{
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 470px){
+  .login-container h1{
+    font-size: 18px;
+  }
+  .login-container p{
+    font-size: 15px;
+  }
+  .login-form{
+    max-width: 350px;
+  }
+  .login-form input{
+    max-width: 350px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 375px){
+  .login-container h1{
+    font-size: 15px;
+  }
+  .login-container p{
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+  .login-form{
+    padding: 10px;
+    max-width: 350px;
+  }
+  .login-form input{
+    max-width: 300px;
+    height: 40px;
+  }
+}

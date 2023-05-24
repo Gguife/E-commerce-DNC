@@ -10,7 +10,6 @@ export const MainRoutes = () =>{
     {path: '/home', element: <Home />},
     {path: '/products/:productId', element: <Products />},
     {path: '/pay/:payId', element: <Pay />},
-
   ])
 
   return routes

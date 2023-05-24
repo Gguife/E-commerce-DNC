@@ -1,10 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HeaderMenu } from '../../components/headerMenu/HeaderMenu'
 
 export const Home = () => {
   return (
-    <div>
-      Home
-    </div>
+    <section className='home'>
+      <HeaderMenu />
+      <div className="home-container">
+
+      </div>
+    </section>
   )
 }

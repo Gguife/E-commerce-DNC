@@ -4,7 +4,7 @@ import './Header.scss'
 export const Header = () => {
   return (
     <div className="header">
-      <img src={Logo} alt="Logo DNC" />
+      <img src={Logo} alt="Logo DNC" className='logo'/>
     </div>
   )
 }

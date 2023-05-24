@@ -10,16 +10,13 @@ export const HeaderMenu = () => {
   const handleMobileOpen = () =>{
     const mobile = document.querySelector('.menu-mobile')
 
-    mobile.style.display = 'flex';
-    mobile.style.left = '0px';
-
+    mobile.style.display = 'flex'
   }
 
   const handleMobileClose = () =>{
     const mobile = document.querySelector('.menu-mobile')
 
-    mobile.style.left = '700px'; 
-    mobile.style.display = 'none';
+    mobile.style.display = 'none'
   }
 
   return (

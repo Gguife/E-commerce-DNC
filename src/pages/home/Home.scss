@@ -1,1 +1,13 @@
-@use '../../sass/varibales'
+@use '../../sass/varibales' as *;
+
+.home{
+  height: 100vh;
+
+  .home-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    row-gap: 20px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,79 @@
+@use '../../sass/varibales' as *;
+
+.product-detail{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+  .detail-left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    
+    .detail-card{
+      height: 300px;
+      h3{
+        margin-top: 20px;
+      }
+    }
+    .detail-description{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      hr{
+        width: 80%;
+      }
+    }
+  }
+
+  .detail-right{
+    display: flex;
+    flex-direction: column;
+    
+    .detail-title{
+      h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      hr{
+        width: 630px;
+      }
+    }
+    .detail-product-info{
+      margin-top: 30px;
+    }
+    .detail-product-color{
+      display: flex;
+      margin: 30px 0;
+    }
+    .detail-size{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      h1{
+        margin-right: 10px;
+      }
+    }
+    .button-link{
+      margin-top: 130px;
+      display: flex;
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $contrast-color;
+        width: 100%;
+        color: $white;
+        height: 40px;
+        border-radius: 10px;
+        transition: .4s;
+
+        &:hover{
+          opacity: .6;
+        }
+      }
+    }
+  }
+}

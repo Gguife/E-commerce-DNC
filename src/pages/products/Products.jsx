@@ -1,7 +1,20 @@
-import React from 'react'
+import './Products.scss'
+import { useParams } from 'react-router-dom' 
+//Components
+import { HeaderMenu } from '../../components/headerMenu/HeaderMenu'
+import { Search } from '../../components/search/Search'
+import { ProductDetail } from '../../components/productDetail/ProductDetail'
 
-export const Products = () => {
+
+export const Products = ({data}) => {
+  const {productId} = useParams()
+  const selectedProduct = data.find((item) => item.id == productId)
+
   return (
-    <div>Products</div>
+    <section className='products'>
+      <HeaderMenu />
+      <Search />
+      <ProductDetail data={selectedProduct} />
+    </section>
   )
 }

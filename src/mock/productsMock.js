@@ -3,9 +3,9 @@ export const PRODUCTS_MOCK = [
     id: 1,
     imgPath: 'product-1.png',
     imgPathDetail: '../../../public/product-1.png',
-    title: 'Cropped manga curta branco | by DNC',
+    title: 'Cropped manga curta | by DNC',
     price: 'R$ 139,90',
-    colors: ['white'],
+    colors: ['white', 'blue', 'black', 'red'],
     sizes: ['p', 'm', 'g', 'gg'],
   },
   {
@@ -23,7 +23,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: '../../../public/product-3.png',
     title: 'Blazer marrom | by DNC',
     price: 'R$ 159,90',
-    colors: ['brown'],
+    colors: ['brown', 'white'],
     sizes: ['p', 'm', 'g', 'gg'],
   },
   {
@@ -50,7 +50,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: '../../../public/product-6.png',
     title: 'Camisa manga longa | by DNC',
     price: 'R$ 119,90',
-    colors: ['black'],
+    colors: ['black', 'brown', 'white'],
     sizes: ['p', 'm'],
   }
 ]

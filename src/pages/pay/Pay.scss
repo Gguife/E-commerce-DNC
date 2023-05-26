@@ -1,1 +1,187 @@
-@use '../../sass/varibales'
+@use '../../sass/varibales' as *;
+
+.pay-container{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+  .pay-leftSide{
+    margin-right: 50px;
+    padding: 20px;
+    form{
+      display: flex;
+      flex-direction: column;
+      .name, .address{
+        font-size: 30px;
+      }
+      #name, #address{
+        width: 500px;
+        height: 40px;
+        padding: 5px;
+        border: 1px solid #999;
+        border-radius: 5px;
+        margin: 3px 0 40px 0;
+        &::placeholder{
+          font-size: 12px;
+        }
+      }
+      .checkbox{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px 0;
+        h1{
+          font-weight: 400;
+          font-size: 30px;
+        }
+        input{
+          margin: 0 10px  15px 0;
+        }
+        label{
+          font-size: 20px;
+        }
+      }
+      .button-pay{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+        width: 100%;
+        height: 48px;
+        border-radius: 6px;
+        background-color: $contrast-color;
+        color: #FFF;
+        border: none;
+        transition: .4s;
+        font-size: 14px;
+        cursor: pointer;
+    
+        &:hover{
+          opacity: .6;
+        }
+      }
+    }
+  }
+
+  .pay-rightSide{
+    height: 287px;
+    max-width: 572px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    gap: 50px;
+    h1{
+      font-size: 30px;
+    }
+    .pay-right-card{
+      width: 70%;
+      margin: 0 auto;
+      .pay-price{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+        .total, span{
+          font-weight: 700;
+        }
+        span{
+          font-size: 30px;
+        }
+        p{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .pay-container{
+    .pay-rightSide{
+      h1{
+        font-size: 20px;
+      }
+      .pay-right-card{
+        .pay-price{
+          span{
+            font-size: 20px;
+          }
+          p{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px){
+  .pay-container{
+    flex-direction: column;
+    align-items: center;
+
+    .pay-leftSide{
+      order: 2;
+      margin-right: 0;
+    }
+    .pay-rightSide{
+      width: 100%;
+      h1{
+        font-size: 30px;
+      }
+      .pay-right-card{
+        .pay-price{
+          span{
+            font-size: 30px;
+          }
+          p{
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px){
+  .pay-container{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    .pay-leftSide{
+      order: 2;
+      margin-right: 0;
+      width: 100%;
+      form{
+        .name, .address{
+          font-size: 20px;
+        }
+        #name, #address{
+          width: 100%;
+        }
+      }
+    }
+    .pay-rightSide{
+      order: 1;
+      margin-bottom: 20px;
+      height: 250px;
+      max-width: 372px;
+      h1{
+        font-size: 20px;
+      }
+      .pay-right-card{
+        .pay-price{
+          span{
+            font-size: 20px;
+          }
+          p{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

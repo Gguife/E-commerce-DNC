@@ -37,8 +37,8 @@ export const ProductDetail = ({data}) => {
           </p>
           </div>
           <div className="detail-product-color">
-            {data.colors.map((color) => (
-                <div style={{
+            {data.colors.map((color, key) => (
+                <div key={key} style={{
                   width: "64px",
                   height: "50px",
                   borderRadius: "10px",

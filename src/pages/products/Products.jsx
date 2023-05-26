@@ -1,4 +1,3 @@
-import './Products.scss'
 import { useParams } from 'react-router-dom' 
 //Components
 import { HeaderMenu } from '../../components/headerMenu/HeaderMenu'

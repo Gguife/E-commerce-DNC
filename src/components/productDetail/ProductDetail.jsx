@@ -52,20 +52,7 @@ export const ProductDetail = ({data}) => {
           <div className="detail-size">
             <h1>Tamanho:</h1>
             {data.sizes.map((size) => (
-              <span
-                style={{
-                  width: "55px",
-                  height: "58px",
-                  borderRadius: "10px",
-                  border: "1px solid black",
-                  padding: "20px",
-                  textTransform: "uppercase",
-                  textAlign: "center",
-                  cursor: 'pointer',
-                }}
-              >
-                {size}
-              </span>
+              <span className='detail-card-size'>{size}</span>
             ))}
           </div>
           <div className="button-link">
